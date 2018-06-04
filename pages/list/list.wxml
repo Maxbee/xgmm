@@ -9,13 +9,14 @@
          <view style='font-weight:bold;font-size:18px; word-break:break-all;'>
            {{item.original_title}}
          </view>
-         <view >主演：
+         <view class='main'>主演：
             <block wx:for="{{item.casts}}">
               {{item.name}}
             </block>
          </view>  
-         <view>
-         评分：{{item.rating.average}}
+         <view class="pubdatesCls">{{item.mainland_pubdate}}</view>
+         <view class='ratingCls'>
+         评分：{{item.rating.average!=0?item.rating.average:'暂无'}}
          </view>
       </view>
     </view>

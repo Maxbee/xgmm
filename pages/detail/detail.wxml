@@ -1,13 +1,17 @@
 
 <view>
 
-  <image src='{{images}}' mode='aspectFill'></image>
+  <image src='{{images}}' mode='widthFix'></image>
   
   <view class='detail-content'>
   <view class='detail-title'>
-    <view class="titleCls">{{title}}</view><view class='rating {{disirable}}'>{{rating}}</view></view>
-    <view class='info'> 地区：<block wx:for='{{countries}}'>{{item}}</block></view>
+   
+      <view class="titleCls">{{title}}</view><view class='rating {{disirable}}'>{{rating}}</view>
+  </view>
+   
+    <view class='info'> 类型：<block wx:for='{{genres}}'>{{item}}</block></view>
     <view class='info'> 导演：<block wx:for='{{directors}}'>{{item}}</block></view>
+     <view class='info'> 演员：<block wx:for='{{casts}}'>{{item}}</block></view>
     <view><text>{{summary}}</text></view>
   </view>
  

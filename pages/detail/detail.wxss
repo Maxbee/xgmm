@@ -20,6 +20,8 @@ image{
 }
 .titleCls{
    word-break:break-all;
+   flex: 1
+
 }
 .rating{
   margin-left: 30rpx;
@@ -28,6 +30,8 @@ image{
   padding:0 10rpx;
   display: flex;
   align-items: center;
+  height:84rpx;
+
 }
 
 .red{

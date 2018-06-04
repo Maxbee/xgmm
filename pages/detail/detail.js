@@ -16,15 +16,23 @@ Page({
     let data =JSON.parse(options.lists)
     console.log(data);
     
-    let { summary, title, images, countries, directors,rating } = data;
+    let { summary, title, images, countries, directors, rating, casts, genres } = data;
     wx.setNavigationBarTitle({
       title: title,
     })
     let newDirectors = directors.map((item)=>{
-      console.log(item.name)
+     
       return item.name 
     }).join(" ")
     rating.average = rating.average==0?'暂未评分':rating.average
+
+
+    
+    let newCasts = []
+    for(let tempAry of casts){
+        newCasts.push(tempAry.name)
+    }
+   
     this.setData({
       countries,
       directors:newDirectors,
@@ -32,7 +40,9 @@ Page({
       title:title,
       summary: summary,
       rating: rating.average,
-      disirable:rating.average>7?'red':'orange'
+      disirable:rating.average>7?'red':'orange',
+      casts:newCasts.join('  '),
+      genres,
     })
   },
 
