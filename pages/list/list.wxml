@@ -1,0 +1,23 @@
+<view class='list-container'>
+  <block wx:for="{{subjects}}">
+    <view class='list-item' hover-class='item-hover' bindtap='onToDetail' data-lists = "{{item}}">
+      <view>
+      <image src='{{item.images.large}}'></image>
+      </view>
+      
+      <view class='list-text'>
+         <view style='font-weight:bold;font-size:18px; word-break:break-all;'>
+           {{item.original_title}}
+         </view>
+         <view >主演：
+            <block wx:for="{{item.casts}}">
+              {{item.name}}
+            </block>
+         </view>  
+         <view>
+         评分：{{item.rating.average}}
+         </view>
+      </view>
+    </view>
+  </block>
+</view>

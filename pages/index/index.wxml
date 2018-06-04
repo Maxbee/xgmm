@@ -1,0 +1,31 @@
+
+
+<view class='index-container'>
+  <!-- <view class='avator'></view> -->
+  <view class='ad'>广告</view>
+  <navigator url='../list/list?type=in_theaters' hover-class="none">
+    <view class='index-btn' hover-class='btn-hover'>
+    <text>正在热映</text>
+    <image src='../image/arrow.png'></image>
+    </view>
+  </navigator>
+  <navigator url='../list/list?type=coming_soon' hover-class="none">
+    <view class='index-btn' hover-class='btn-hover'>
+    <text>即将上映</text>
+    <image src='../image/arrow.png'></image>
+    </view>
+  </navigator>
+  <navigator url='../list/list?type=top250' hover-class="none">
+    <view class='index-btn' hover-class='btn-hover'>
+    <text>TOP250</text>
+    <image src='../image/arrow.png'></image>
+    </view>
+  </navigator>
+  <navigator url='../xgm/xgm' hover-class="none">
+    <view class='index-btn' hover-class='btn-hover'>
+    <text>xgmm</text>
+    <image src='../image/arrow.png'></image>
+    </view>
+  </navigator>
+  <view class='copyright'>2015-2018@酱爆小咸鱼</view>
+</view>

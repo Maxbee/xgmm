@@ -1,0 +1,40 @@
+/* pages/list/list.wxss */
+
+image{
+  width: 200rpx;
+  height: 240rpx;  
+  border-radius: 15rpx;
+}
+
+.list-item{
+  background-color: #eee;
+  border-radius: 20rpx;
+  margin: 20rpx 20rpx;
+  padding: 30rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.list-container{
+  padding: auto 30rpx;
+  
+}
+text{
+  margin-left: 20rpx;
+}
+
+.item-hover{
+  background-color: white;
+  transition: all 0.4s;
+}
+
+.list-text{
+  padding: 20rpx;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.list-text view{
+
+  flex: 1;
+}

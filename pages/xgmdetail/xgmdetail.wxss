@@ -1,0 +1,40 @@
+/* pages/xgmdetail/xgmdetail.wxss */
+
+.container{
+   
+}
+
+.title{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.name{
+    font-size: 12px;
+    color:grey;
+    text-align: center;
+    margin:15rpx;
+}
+
+.date{
+    font-size: 12px;
+    color:grey;
+    text-align: center;
+}
+
+.blogcontent{
+    font-size:40rpx;
+    margin-left: 32rpx;
+    margin-right: 32rpx;
+    padding:40rpx 20rpx;
+
+    box-shadow: 0 10px 10px 0  rgba(44,57,75,0.1);
+
+    
+}
+
+image{
+    width: 100%;
+    
+}

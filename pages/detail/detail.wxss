@@ -1,0 +1,45 @@
+/* pages/detail/detail.wxss */
+
+image{
+  width: 90%;
+  margin-left:5%;
+  border-radius: 20rpx;
+}
+
+.detail-content{
+  letter-spacing: 1.2rpx;
+  line-height: 1.5;
+  padding: 50rpx;
+}
+
+.detail-title{
+  font-size: 25px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+}
+.titleCls{
+   word-break:break-all;
+}
+.rating{
+  margin-left: 30rpx;
+  color:#fff;
+  border-radius: 20rpx;
+  padding:0 10rpx;
+  display: flex;
+  align-items: center;
+}
+
+.red{
+  background: red;
+}
+
+.orange{
+  background: orange;
+}
+
+.info{
+  font-size:14px;
+  color: #666;
+}
+

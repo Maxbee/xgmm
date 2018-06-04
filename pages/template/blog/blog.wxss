@@ -1,0 +1,37 @@
+.date-text{
+    font-size: 10px;
+    color:#666;
+    margin-left:10rpx;
+}
+
+.xgm-container{
+    padding:20rpx 25rpx;
+    width: 90%;
+    margin:10rpx auto;
+    box-shadow: 0 4px 10px 0 rgba(44,57,75,0.1);
+}
+
+.xgm-container-hover{
+    transform: scale(0.95);
+    transition: all .3s;
+}
+
+.title{
+    font-size: 18px;
+}
+
+.name-text{
+    font-size: 10px;
+    background-color: red;
+    padding:5rpx 10rpx;
+    border-radius: 10rpx;
+    color:#fff;
+}
+
+.hidden{
+    display: none ;
+}
+
+.xgm-swiper{
+  margin-bottom: 20rpx;
+}

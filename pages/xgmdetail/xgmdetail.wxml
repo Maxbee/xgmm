@@ -1,0 +1,10 @@
+<view class="container">
+ 
+  <image src="http://xgmm.me/{{blog.banImg}}" class="{{blog.banImg!='upload/blog/'?'':'hidden'}}" mode='widthFix' catchlongpress='onSaveImg' data-imgsrc="http://xgmm.me/{{blog.banImg}}"></image>
+  <view class='title'>{{blog.title}}</view>
+  <view class="name">{{blog.user}}</view>
+  <view class="date">{{blog.topicDate}}</view>
+  <view class="blogcontent">
+    {{blog.content}}
+  </view>
+</view>

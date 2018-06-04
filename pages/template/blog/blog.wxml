@@ -1,0 +1,12 @@
+<template name="blog">
+  <view>
+    <view class="xgm-container {{item.topicDate=='0000-00-00'?'hidden':''}}" hover-class="xgm-container-hover" wx:key="{{index}}" data-blog="{{item}}" bindtap='ToDetail'>
+      <image src="http://xgmm.me/{{item.banImg}}" class="{{item.banImg!='upload/blog/'?'':'hidden'}}" style="width:100%;height:250rpx;" mode='widthFix' lazy-load='true'></image>
+      <view class="title">{{item.title}}</view>
+      <view>
+        <text class="name-text">{{item.user}}</text>
+        <text class="date-text">{{item.topicDate}}</text>
+      </view>
+    </view>
+  </view>
+</template>

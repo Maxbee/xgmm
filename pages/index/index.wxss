@@ -1,0 +1,52 @@
+/* pages/index/index.wxss */
+
+.index-container{
+  background-color: #eee;
+  width: 100%;
+  position: fixed;
+  height: 100%;
+ 
+}
+
+.index-btn{
+  
+  padding: 30rpx;
+  margin:20rpx 20rpx;
+  border-radius:20rpx;
+  background-color: white;
+}
+
+.btn-hover{
+  transform: scale(0.95);
+  transition:all .5s;
+}
+
+.index-btn image{
+  width: 52rpx;
+  height: 52rpx;
+  vertical-align: middle;
+  float: right;
+}
+.ad{
+  width: 95%;
+  height: 400rpx;
+  margin:20rpx auto;
+  background-color:#fff;
+  border-radius: 20rpx;
+}
+.copyright{
+  position: fixed;
+  bottom: 10rpx;
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+  color: #ccc;
+}
+
+.avator{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background-color: red;
+  border:1px solid #0099FF;
+}

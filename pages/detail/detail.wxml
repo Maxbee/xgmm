@@ -1,0 +1,14 @@
+
+<view>
+
+  <image src='{{images}}' mode='aspectFill'></image>
+  
+  <view class='detail-content'>
+  <view class='detail-title'>
+    <view class="titleCls">{{title}}</view><view class='rating {{disirable}}'>{{rating}}</view></view>
+    <view class='info'> 地区：<block wx:for='{{countries}}'>{{item}}</block></view>
+    <view class='info'> 导演：<block wx:for='{{directors}}'>{{item}}</block></view>
+    <view><text>{{summary}}</text></view>
+  </view>
+ 
+</view>
