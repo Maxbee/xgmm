@@ -2,7 +2,19 @@
 
 <view class='index-container'>
   <!-- <view class='avator'></view> -->
-  <view class='ad'>广告</view>
+  <view class='ad'>
+    
+  <swiper indicator-dots="{{indicatorDots}}"autoplay="{{false}}" >
+ 
+    <swiper-item>
+      <view class='weather_wrap'>{{weatherData}}</view>
+    </swiper-item>
+    <swiper-item>
+      <view>广告</view>
+    </swiper-item>
+  
+</swiper>
+  </view>
   <navigator url='../list/list?type=in_theaters' hover-class="none">
     <view class='index-btn' hover-class='btn-hover'>
     <text>正在热映</text>
@@ -27,5 +39,13 @@
     <image src='../image/arrow.png'></image>
     </view>
   </navigator>
+
+   <navigator url='../test/test' hover-class="none">
+    <view class='index-btn' hover-class='btn-hover'>
+    <text>test</text>
+    <image src='../image/arrow.png'></image>
+    </view>
+  </navigator>
+  
   <view class='copyright'>2015-2018@酱爆小咸鱼</view>
 </view>

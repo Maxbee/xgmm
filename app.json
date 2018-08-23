@@ -1,18 +1,17 @@
 {
   "pages": [
-    
     "pages/index/index",
     "pages/logs/logs",
     "pages/list/list",
     "pages/detail/detail",
     "pages/xgm/xgm",
-    "pages/xgmdetail/xgmdetail"
+    "pages/xgmdetail/xgmdetail",
+    "pages/test/test"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "没什么用的APP",
     "navigationBarTextStyle": "black"
-    
   }
 }
