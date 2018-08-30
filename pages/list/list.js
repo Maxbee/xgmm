@@ -14,7 +14,7 @@ Page({
   data: {
     subjects:[],
     page:1,
-    city:''
+    city:'广州市'
   },
   onToDetail:function(event){
     
@@ -29,8 +29,18 @@ Page({
   onLoad: function (options) {
     this.movieType = options.type;
     let movieType = options.type;
-  
+    this.setData({
+      movieType: options.type
+    })
     this.getData(movieType)
+  },
+
+  openLocation() {
+    wx.showToast({
+      title: '检测到您未授权使用位置权限，请先开启哦',
+      icon: 'none',
+      duration: 3000
+    })
   },
   /*
   *获取电影数据
@@ -44,25 +54,19 @@ Page({
     var self = this;
     
     this.getLct()
-
+    
 
     wx.request({
       // url: config.url+type+'?city=广州',
       url: `${config.url}/${movietype}?city=${self.data.city}&count=${self.data.page * 10}`,
       method: "GET",
-
       data: {},
-
       header: {
-
         'Content-Type': "json"
-
       },
 
       success: function (res) {
         wx.hideLoading();
-        
-       
         let newData = res.data.subjects;
         let currentData = self.data.subjects;
 
@@ -92,32 +96,58 @@ Page({
   getLct(){
     let self  = this;
     wx.getLocation({
-      type: 'wgs84',
+      type: 'gcj02',
       success: function (res) {
         var latitude = res.latitude
         var longitude = res.longitude
-      
-        QQMap.reverseGeocoder({
-          location: {
-            latitude: latitude,
-            longitude: longitude
-          },
-          success: function (res) {
-            let city = res.result.address_component.city;
-            self.setData({
-              city
-            })
-          },
-          fail: function (res) {
-            console.log(res);
-          },
 
-        });
-
-
+        self.setData({
+          latitude,
+          longitude
+        })
+        self.analyLocation()
+        // self.getData(self.data.movieType)
       }
     })
     
+  },
+  analyLocation(){
+    let self = this
+    QQMap.reverseGeocoder({
+      location: {
+        latitude: self.data.latitude,
+        longitude: self.data.longitude
+      },
+      success: function (res) {
+       
+        let city = res.result.address_component.city;
+        self.setData({
+          city
+        })
+        console.log(self.data.city)
+      },
+      fail: function (res) {
+        console.log(res);
+        self.openLocation()//提醒打开地理位置权限
+      },
+
+    });
+  },
+  chooseLocation() {
+    let self = this;
+    wx.chooseLocation({
+      success: (res) => {
+
+        let { latitude, longitude } = res
+
+        this.setData({
+          latitude,
+          longitude,
+        })
+        self.analyLocation()//逆解析地址
+
+      }
+    })
   },
   /**
    * 生命周期函数--监听页面显示

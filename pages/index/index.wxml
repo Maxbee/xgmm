@@ -1,5 +1,4 @@
 
-
 <view class='index-container'>
   <!-- <view class='avator'></view> -->
   <view class='ad'>
@@ -42,7 +41,7 @@
 
    <navigator url='../test/test' hover-class="none">
     <view class='index-btn' hover-class='btn-hover'>
-    <text>test</text>
+    <text>天气</text>
     <image src='../image/arrow.png'></image>
     </view>
   </navigator>

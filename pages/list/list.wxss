@@ -5,7 +5,10 @@ image{
   height: 240rpx;  
   border-radius: 15rpx;
 }
-
+.list-city{
+  padding: 10rpx 0 10rpx 30rpx;
+  font-size: 16px;
+}
 .list-item{
   background-color: #eee;
   border-radius: 20rpx;

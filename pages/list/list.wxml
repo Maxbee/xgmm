@@ -1,5 +1,7 @@
 <view class='list-container'>
-  <block wx:for="{{subjects}}">
+  <!-- <button open-type="share">OPENDGY</button> -->
+  <view class='list-city' bindtap="chooseLocation">城市：{{city}}</view>
+  <block wx:for="{{subjects}}" wx:key="{{subjects}}">
     <view class='list-item' hover-class='item-hover' bindtap='onToDetail' data-lists = "{{item}}">
       <view>
       <image src='{{item.images.large}}'></image>
@@ -10,7 +12,7 @@
            {{item.original_title}}
          </view>
          <view class='main'>主演：
-            <block wx:for="{{item.casts}}">
+            <block wx:for="{{item.casts}}" wx:key="{{item.casts}}">
               {{item.name}}
             </block>
          </view>  
