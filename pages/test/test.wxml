@@ -1,7 +1,9 @@
 <!--pages/test/test.wxml-->
 <pill isIndex="true" title_text="首页" isShow=""></pill>
 
-<view class='weather_wrap'>
+<view class='weather_wrap' style='{{bgcolor}}'>
+<image src='/static/images/setting.png' class='setting'></image>
+<canvas canvas-id="effect" id="effect"></canvas>
 <view class='top_date'>{{date}}</view>
 <view class='weather_today'>今日</view>
 <view class='weather_status'>

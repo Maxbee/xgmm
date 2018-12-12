@@ -14,7 +14,7 @@ Page({
   data: {
     subjects:[],
     page:1,
-    city:'广州市'
+    city:'定位中'
   },
   onToDetail:function(event){
     
@@ -32,6 +32,7 @@ Page({
     this.setData({
       movieType: options.type
     })
+    this.getLct()
     this.getData(movieType)
   },
 
@@ -53,9 +54,7 @@ Page({
 
     var self = this;
     
-    this.getLct()
-    
-
+    console.log(movietype, self.data.city)
     wx.request({
       // url: config.url+type+'?city=广州',
       url: `${config.url}/${movietype}?city=${self.data.city}&count=${self.data.page * 10}`,
@@ -76,14 +75,10 @@ Page({
             icon:'none'
           })
         }
-
-
         self.setData({
           subjects: res.data.subjects,
           page: self.data.page+1
         })
-        
-
       }
     })
   },
@@ -93,6 +88,7 @@ Page({
   onReady: function () {
   
   },
+  // 获取经纬度
   getLct(){
     let self  = this;
     wx.getLocation({
@@ -111,6 +107,7 @@ Page({
     })
     
   },
+  //逆解析地址
   analyLocation(){
     let self = this
     QQMap.reverseGeocoder({
@@ -124,7 +121,7 @@ Page({
         self.setData({
           city
         })
-        console.log(self.data.city)
+        console.log('解析出来的城市：',self.data.city)
       },
       fail: function (res) {
         console.log(res);
@@ -133,6 +130,7 @@ Page({
 
     });
   },
+  //选择地址
   chooseLocation() {
     let self = this;
     wx.chooseLocation({
@@ -145,7 +143,8 @@ Page({
           longitude,
         })
         self.analyLocation()//逆解析地址
-
+       
+        self.getData(self.movieType)
       }
     })
   },

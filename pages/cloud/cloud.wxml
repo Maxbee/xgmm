@@ -1,0 +1,473 @@
+<!--pages/cloud/cloud.wxml-->
+
+  <image mode='scaleToFill' src='/static/images/bn.jpg' style='width:100%;'></image>
+
+<view class='tips'>
+  <view class='blockstyle work'>班</view>
+  <view class='blockstyle select'>假</view>
+  <button open-type="share" class='share'> 分享 </button>
+</view>
+<!--一月-->
+<view class='calendar'>
+  <view class='month'>一月</view>
+  <view class='xingqi'>
+    <view class='xingqi_item'>一</view>
+     <view class='xingqi_item'>二</view>
+     <view class='xingqi_item'>三</view>
+     <view class='xingqi_item'>四</view>
+     <view class='xingqi_item'>五</view>
+     <view class='xingqi_item red'>六
+     </view>
+     <view class='xingqi_item red'>日</view>
+  </view>
+  <view class='row'>
+     <view class='item'></view>
+     <view class='item'></view>
+     <view class='item'></view>
+     <view class='item'></view>
+     <view class='item'></view>
+     <view class='item work'>29<view class='pre_text'>廿三</view></view>
+     <view class='item select'>30<view class='pre_text'>廿四</view></view>
+  </view>
+  <view class='row'>
+    <view class='item select'>31<view class='pre_text'>廿五</view></view>
+     <view class='item select'>1<view class='pre_text'>元旦</view></view>
+     <view class='item '>2<view class='pre_text'>廿七</view></view>
+     <view class='item'>3<view class='pre_text'>廿八</view></view>
+     <view class='item'>4<view class='pre_text'>廿九</view></view>
+     <view class='item red'>5<view class='pre_text'>小寒</view></view>
+     <view class='item red'>6<view class='pre_text'>腊月</view></view>
+  </view>
+  
+   <view class='row'>
+     <view class='item'>7<view class='pre_text'>初二</view></view>
+     <view class='item'>8<view class='pre_text'>初三</view></view>
+     <view class='item'>9<view class='pre_text'>初四</view></view>
+     <view class='item'>10<view class='pre_text'>初五</view></view>
+     <view class='item'>11<view class='pre_text'>初六</view></view>
+     <view class='item red'>12<view class='pre_text'>初七</view></view>
+     <view class='item red'>13<view class='pre_text'>腊八节</view></view>
+  </view>
+
+  <view class='row'>
+     <view class='item'>14<view class='pre_text'>初九</view></view>
+     <view class='item'>15<view class='pre_text'>初十</view></view>
+     <view class='item'>16<view class='pre_text'>十一</view></view>
+     <view class='item'>17<view class='pre_text'>十二</view></view>
+     <view class='item'>18<view class='pre_text'>十三</view></view>
+     <view class='item red'>19<view class='pre_text'>十四</view></view>
+     <view class='item red'>20<view class='pre_text'>大寒</view></view>
+  </view>
+
+  <view class='row'>
+     <view class='item'>21<view class='pre_text'>十六</view></view>
+     <view class='item'>22<view class='pre_text'>十七</view></view>
+     <view class='item'>23<view class='pre_text'>十八</view></view>
+     <view class='item'>24<view class='pre_text'>十九</view></view>
+     <view class='item'>25<view class='pre_text'>廿十</view></view>
+     <view class='item red'>26<view class='pre_text'>廿一</view></view>
+     <view class='item red'>27<view class='pre_text'>廿二</view></view>
+  </view>
+
+   <view class='row'>
+     <view class='item'>28<view class='pre_text'>小年</view></view>
+     <view class='item'>29<view class='pre_text'>廿四</view></view>
+     <view class='item'>30<view class='pre_text'>廿五</view></view>
+     <view class='item'>31<view class='pre_text'>廿六</view></view>
+     <view class='item'><view class='pre_text'></view></view>
+     <view class='item red'><view class='pre_text'></view></view>
+     <view class='item red'><view class='pre_text'></view></view>
+  </view>
+</view>
+
+
+<!--二月-->                           
+<view class='calendar' style='margin-top:40rpx;'>
+  <view class='month'>二月</view>
+  <view class='xingqi'>
+    <view class='xingqi_item'>一</view>
+     <view class='xingqi_item'>二</view>
+     <view class='xingqi_item'>三</view>
+     <view class='xingqi_item'>四</view>
+     <view class='xingqi_item'>五</view>
+     <view class='xingqi_item red'>六
+     </view>
+     <view class='xingqi_item red'>日</view>
+  </view>
+  <view class='row'>
+     <view class='item'></view>
+     <view class='item'></view>
+     <view class='item'></view>
+     <view class='item'></view>
+     <view class='item'>1<view class='pre_text'>廿七</view></view>
+     <view class='item work'>2<view class='pre_text'>廿八</view></view>
+     <view class='item work'>3<view class='pre_text'>廿九</view></view>
+  </view>
+  <view class='row'>
+    <view class='item select'>4<view class='pre_text'>除夕</view></view>
+     <view class='item select'>5<view class='pre_text'>春节</view></view>
+     <view class='item select'>6<view class='pre_text'>初二</view></view>
+     <view class='item select'>7<view class='pre_text'>初三</view></view>
+     <view class='item select'>8<view class='pre_text'>初四</view></view>
+     <view class='item select'>9<view class='pre_text'>初五</view></view>
+     <view class='item select'>10<view class='pre_text'>初六</view></view>
+  </view>
+  
+   <view class='row'>
+     <view class='item'>11<view class='pre_text'>初七</view></view>
+     <view class='item'>12<view class='pre_text'>初八</view></view>
+     <view class='item'>13<view class='pre_text'>初久</view></view>
+     <view class='item'>14<view class='pre_text'>初十</view></view>
+     <view class='item'>15<view class='pre_text'>十一</view></view>
+     <view class='item red'>16<view class='pre_text'>十二</view></view>
+     <view class='item red'>17<view class='pre_text'>十三</view></view>
+  </view>
+
+  <view class='row'>
+     <view class='item'>18<view class='pre_text'>十四</view></view>
+     <view class='item'>19<view class='pre_text'>元宵节</view></view>
+     <view class='item'>20<view class='pre_text'>十六</view></view>
+     <view class='item'>21<view class='pre_text'>十七</view></view>
+     <view class='item'>22<view class='pre_text'>十八</view></view>
+     <view class='item red'>23<view class='pre_text'>十九</view></view>
+     <view class='item red'>24<view class='pre_text'>二十</view></view>
+  </view>
+
+  <view class='row'>
+     <view class='item'>25<view class='pre_text'>廿一</view></view>
+     <view class='item'>26<view class='pre_text'>廿二</view></view>
+     <view class='item'>27<view class='pre_text'>廿三</view></view>
+     <view class='item'>28<view class='pre_text'>廿四</view></view>
+     <view class='item'><view class='pre_text'></view></view>
+     <view class='item red'><view class='pre_text'></view></view>
+     <view class='item red'><view class='pre_text'></view></view>
+  </view>
+
+</view>
+
+<!--四月-->                           
+<view class='calendar' style='margin-top:40rpx;'>
+  <view class='month'>四月</view>
+  <view class='xingqi'>
+    <view class='xingqi_item'>一</view>
+     <view class='xingqi_item'>二</view>
+     <view class='xingqi_item'>三</view>
+     <view class='xingqi_item'>四</view>
+     <view class='xingqi_item'>五</view>
+     <view class='xingqi_item red'>六
+     </view>
+     <view class='xingqi_item red'>日</view>
+  </view>
+  <view class='row'>
+     <view class='item'>1<view class='pre_text'>廿六</view></view>
+     <view class='item'>2<view class='pre_text'>廿七</view></view>
+     <view class='item'>3<view class='pre_text'>廿八</view></view>
+     <view class='item'>4<view class='pre_text'>廿九</view></view>
+     <view class='item select'>5<view class='pre_text'>清明</view></view>
+     <view class='item select'>6<view class='pre_text'>初二</view></view>
+     <view class='item select'>7<view class='pre_text'>初三</view></view>
+  </view>
+  <view class='row'>
+    <view class='item'>8<view class='pre_text'>初四</view></view>
+     <view class='item'>9<view class='pre_text'>初五</view></view>
+     <view class='item'>10<view class='pre_text'>初六</view></view>
+     <view class='item'>11<view class='pre_text'>初七</view></view>
+     <view class='item'>12<view class='pre_text'>初八</view></view>
+     <view class='item red'>13<view class='pre_text'>初九</view></view>
+     <view class='item red'>14<view class='pre_text'>初十</view></view>
+  </view>
+  
+   <view class='row'>
+     <view class='item'>15<view class='pre_text'>十一</view></view>
+     <view class='item'>16<view class='pre_text'>十二</view></view>
+     <view class='item'>17<view class='pre_text'>十三</view></view>
+     <view class='item'>18<view class='pre_text'>十四</view></view>
+     <view class='item'>19<view class='pre_text'>十五</view></view>
+     <view class='item red'>20<view class='pre_text'>谷雨</view></view>
+     <view class='item red'>21<view class='pre_text'>十七</view></view>
+  </view>
+
+  <view class='row'>
+     <view class='item'>22<view class='pre_text'>十八</view></view>
+     <view class='item'>23<view class='pre_text'>十九</view></view>
+     <view class='item'>24<view class='pre_text'>二十</view></view>
+     <view class='item'>25<view class='pre_text'>廿一</view></view>
+     <view class='item'>26<view class='pre_text'>廿二</view></view>
+     <view class='item red'>27<view class='pre_text'>廿三</view></view>
+     <view class='item red'>28<view class='pre_text'>廿四</view></view>
+  </view>
+
+  <view class='row'>
+     <view class='item'>29<view class='pre_text'>廿五</view></view>
+     <view class='item'>30<view class='pre_text'>廿六</view></view>
+     <view class='item'><view class='pre_text'></view></view>
+     <view class='item'><view class='pre_text'></view></view>
+     <view class='item'><view class='pre_text'></view></view>
+     <view class='item red'><view class='pre_text'></view></view>
+     <view class='item red'><view class='pre_text'></view></view>
+  </view>
+
+</view>
+
+<!--五月-->                           
+<view class='calendar' style='margin-top:40rpx;'>
+  <view class='month'>五月</view>
+  <view class='xingqi'>
+    <view class='xingqi_item'>一</view>
+     <view class='xingqi_item'>二</view>
+     <view class='xingqi_item'>三</view>
+     <view class='xingqi_item'>四</view>
+     <view class='xingqi_item'>五</view>
+     <view class='xingqi_item red'>六
+     </view>
+     <view class='xingqi_item red'>日</view>
+  </view>
+  <view class='row'>
+     <view class='item'><view class='pre_text'></view></view>
+     <view class='item'><view class='pre_text'></view></view>
+     <view class='item select'>1<view class='pre_text'>劳动节</view></view>
+     <view class='item'>2<view class='pre_text'>廿八</view></view>
+     <view class='item '>3<view class='pre_text'>廿九</view></view>
+     <view class='item red'>4<view class='pre_text'>青年节</view></view>
+     <view class='item red'>5<view class='pre_text'>四月</view></view>
+  </view>
+  <view class='row'>
+    <view class='item'>6<view class='pre_text'>立夏</view></view>
+     <view class='item'>7<view class='pre_text'>初三</view></view>
+     <view class='item'>8<view class='pre_text'>初四</view></view>
+     <view class='item'>9<view class='pre_text'>初五</view></view>
+     <view class='item'>10<view class='pre_text'>初六</view></view>
+     <view class='item red'>11<view class='pre_text'>初七</view></view>
+     <view class='item red'>12<view class='pre_text'>初八</view></view>
+  </view>
+  
+   <view class='row'>
+     <view class='item'>15<view class='pre_text'>十一</view></view>
+     <view class='item'>16<view class='pre_text'>十二</view></view>
+     <view class='item'>17<view class='pre_text'>十三</view></view>
+     <view class='item'>18<view class='pre_text'>十四</view></view>
+     <view class='item'>19<view class='pre_text'>十五</view></view>
+     <view class='item red'>20<view class='pre_text'>谷雨</view></view>
+     <view class='item red'>21<view class='pre_text'>十七</view></view>
+  </view>
+
+  <view class='row'>
+     <view class='item'>22<view class='pre_text'>十八</view></view>
+     <view class='item'>23<view class='pre_text'>十九</view></view>
+     <view class='item'>24<view class='pre_text'>二十</view></view>
+     <view class='item'>25<view class='pre_text'>廿一</view></view>
+     <view class='item'>26<view class='pre_text'>廿二</view></view>
+     <view class='item red'>27<view class='pre_text'>廿三</view></view>
+     <view class='item red'>28<view class='pre_text'>廿四</view></view>
+  </view>
+
+  <view class='row'>
+     <view class='item'>29<view class='pre_text'>廿五</view></view>
+     <view class='item'>30<view class='pre_text'>廿六</view></view>
+     <view class='item'><view class='pre_text'></view></view>
+     <view class='item'><view class='pre_text'></view></view>
+     <view class='item'><view class='pre_text'></view></view>
+     <view class='item red'><view class='pre_text'></view></view>
+     <view class='item red'><view class='pre_text'></view></view>
+  </view>
+</view>
+
+<!--六月-->                           
+<view class='calendar' style='margin-top:40rpx;'>
+  <view class='month'>六月</view>
+  <view class='xingqi'>
+    <view class='xingqi_item'>一</view>
+     <view class='xingqi_item'>二</view>
+     <view class='xingqi_item'>三</view>
+     <view class='xingqi_item'>四</view>
+     <view class='xingqi_item'>五</view>
+     <view class='xingqi_item red'>六
+     </view>
+     <view class='xingqi_item red'>日</view>
+  </view>
+  <view class='row'>
+     <view class='item'><view class='pre_text'></view></view>
+     <view class='item'><view class='pre_text'></view></view>
+     <view class='item'><view class='pre_text'></view></view>
+     <view class='item'><view class='pre_text'></view></view>
+     <view class='item'><view class='pre_text'></view></view>
+     <view class='item red'>1<view class='pre_text'>儿童节</view></view>
+     <view class='item red'>2<view class='pre_text'>廿九</view></view>
+  </view>
+  <view class='row'>
+    <view class='item'>3<view class='pre_text'>五月</view></view>
+     <view class='item'>4<view class='pre_text'>初二</view></view>
+     <view class='item'>5<view class='pre_text'>初三</view></view>
+     <view class='item'>6<view class='pre_text'>初四</view></view>
+     <view class='item select'>7<view class='pre_text'>初五</view></view>
+     <view class='item select'>8<view class='pre_text'>初六</view></view>
+     <view class='item select'>9<view class='pre_text'>初七</view></view>
+  </view>
+  
+   <view class='row'>
+     <view class='item'>10<view class='pre_text'>初八</view></view>
+     <view class='item'>11<view class='pre_text'>初九</view></view>
+     <view class='item'>12<view class='pre_text'>初始</view></view>
+     <view class='item'>13<view class='pre_text'>十一</view></view>
+     <view class='item'>14<view class='pre_text'>十二</view></view>
+     <view class='item red'>15<view class='pre_text'>十三</view></view>
+     <view class='item red'>16<view class='pre_text'>十四</view></view>
+  </view>
+
+  <view class='row'>
+     <view class='item'>17<view class='pre_text'>十五</view></view>
+     <view class='item'>18<view class='pre_text'>十六</view></view>
+     <view class='item'>19<view class='pre_text'>十七</view></view>
+     <view class='item'>20<view class='pre_text'>十八</view></view>
+     <view class='item'>21<view class='pre_text'>夏至</view></view>
+     <view class='item red'>22<view class='pre_text'>二十</view></view>
+     <view class='item red'>23<view class='pre_text'>廿一</view></view>
+  </view>
+
+  <view class='row'>
+     <view class='item'>24<view class='pre_text'>廿二</view></view>
+     <view class='item'>25<view class='pre_text'>廿三</view></view>
+     <view class='item'>26<view class='pre_text'>廿四</view></view>
+     <view class='item'>27<view class='pre_text'>廿五</view></view>
+     <view class='item'>28<view class='pre_text'>廿六</view></view>
+     <view class='item red'>29<view class='pre_text'>廿七</view></view>
+     <view class='item red'>30<view class='pre_text'>廿八</view></view>
+  </view>
+</view>
+
+<!--九月-->                           
+<view class='calendar' style='margin-top:40rpx;'>
+  <view class='month'>九月</view>
+  <view class='xingqi'>
+    <view class='xingqi_item'>一</view>
+     <view class='xingqi_item'>二</view>
+     <view class='xingqi_item'>三</view>
+     <view class='xingqi_item'>四</view>
+     <view class='xingqi_item'>五</view>
+     <view class='xingqi_item red'>六
+     </view>
+     <view class='xingqi_item red'>日</view>
+  </view>
+  <view class='row'>
+     <view class='item'><view class='pre_text'></view></view>
+     <view class='item'><view class='pre_text'></view></view>
+     <view class='item'><view class='pre_text'></view></view>
+     <view class='item'><view class='pre_text'></view></view>
+     <view class='item'><view class='pre_text'></view></view>
+     <view class='item red'><view class='pre_text'></view></view>
+     <view class='item red'>1<view class='pre_text'>初三</view></view>
+  </view>
+  <view class='row'>
+    <view class='item'>2<view class='pre_text'>初四</view></view>
+     <view class='item'>3<view class='pre_text'>初五</view></view>
+     <view class='item'>4<view class='pre_text'>初六</view></view>
+     <view class='item'>5<view class='pre_text'>初七</view></view>
+     <view class='item '>6<view class='pre_text'>初八</view></view>
+     <view class='item red'>7<view class='pre_text'>初九</view></view>
+     <view class='item red'>8<view class='pre_text'>白露</view></view>
+  </view>
+  
+   <view class='row'>
+     <view class='item'>9<view class='pre_text'>十一</view></view>
+     <view class='item'>10<view class='pre_text'>教师节</view></view>
+     <view class='item'>11<view class='pre_text'>十三</view></view>
+     <view class='item'>12<view class='pre_text'>十四</view></view>
+     <view class='item select'>13<view class='pre_text'>中秋节</view></view>
+     <view class='item select'>14<view class='pre_text'>十六</view></view>
+     <view class='item select'>15<view class='pre_text'>十七</view></view>
+  </view>
+
+  <view class='row'>
+     <view class='item'>16<view class='pre_text'>十八</view></view>
+     <view class='item'>17<view class='pre_text'>十九</view></view>
+     <view class='item'>18<view class='pre_text'>二十</view></view>
+     <view class='item'>19<view class='pre_text'>廿一</view></view>
+     <view class='item'>20<view class='pre_text'>廿二</view></view>
+     <view class='item red'>21<view class='pre_text'>廿三</view></view>
+     <view class='item red'>22<view class='pre_text'>廿四</view></view>
+  </view>
+
+  <view class='row'>
+     <view class='item'>23<view class='pre_text'>秋分</view></view>
+     <view class='item'>24<view class='pre_text'>廿六</view></view>
+     <view class='item'>25<view class='pre_text'>廿七</view></view>
+     <view class='item'>26<view class='pre_text'>廿八</view></view>
+     <view class='item'>27<view class='pre_text'>廿九</view></view>
+     <view class='item red'>28<view class='pre_text'>三十</view></view>
+     <view class='item work'>29<view class='pre_text'>九月</view></view>
+  </view>
+  <view class='row'>
+     <view class='item'>30<view class='pre_text'>初二</view></view>
+     <view class='item'><view class='pre_text'></view></view>
+     <view class='item'><view class='pre_text'></view></view>
+     <view class='item'><view class='pre_text'></view></view>
+     <view class='item'><view class='pre_text'></view></view>
+     <view class='item red'><view class='pre_text'></view></view>
+     <view class='item red'><view class='pre_text'></view></view>
+  </view>
+</view>
+
+<!--十月-->                           
+<view class='calendar' style='margin-top:40rpx;'>
+  <view class='month'>十月</view>
+  <view class='xingqi'>
+    <view class='xingqi_item'>一</view>
+     <view class='xingqi_item'>二</view>
+     <view class='xingqi_item'>三</view>
+     <view class='xingqi_item'>四</view>
+     <view class='xingqi_item'>五</view>
+     <view class='xingqi_item red'>六
+     </view>
+     <view class='xingqi_item red'>日</view>
+  </view>
+  <view class='row'>
+     <view class='item'><view class='pre_text'></view></view>
+     <view class='item select'>1<view class='pre_text'>国庆节</view></view>
+     <view class='item select'>2<view class='pre_text'>初四</view></view>
+     <view class='item select'>3<view class='pre_text'>初五</view></view>
+     <view class='item select'>4<view class='pre_text'>初六</view></view>
+     <view class='item select'>5<view class='pre_text'>初七</view></view>
+     <view class='item select'>6<view class='pre_text'>初八</view></view>
+  </view>
+  <view class='row'>
+    <view class='item select'>7<view class='pre_text'>重阳节</view></view>
+     <view class='item'>8<view class='pre_text'>寒露</view></view>
+     <view class='item'>9<view class='pre_text'>十一</view></view>
+     <view class='item'>10<view class='pre_text'>十二</view></view>
+     <view class='item '>11<view class='pre_text'>十三</view></view>
+     <view class='item work'>12<view class='pre_text'>十四</view></view>
+     <view class='item red'>13<view class='pre_text'>十五</view></view>
+  </view>
+  
+   <view class='row'>
+     <view class='item'>14<view class='pre_text'>十六</view></view>
+     <view class='item'>15<view class='pre_text'>十七</view></view>
+     <view class='item'>16<view class='pre_text'>十八</view></view>
+     <view class='item'>17<view class='pre_text'>十九</view></view>
+     <view class='item '>18<view class='pre_text'>二十</view></view>
+     <view class='item red'>19<view class='pre_text'>廿一</view></view>
+     <view class='item red'>20<view class='pre_text'>廿二</view></view>
+  </view>
+
+  <view class='row'>
+     <view class='item'>21<view class='pre_text'>廿三</view></view>
+     <view class='item'>22<view class='pre_text'>廿四</view></view>
+     <view class='item'>23<view class='pre_text'>廿五</view></view>
+     <view class='item'>24<view class='pre_text'>霜降</view></view>
+     <view class='item'>25<view class='pre_text'>廿七</view></view>
+     <view class='item red'>26<view class='pre_text'>廿八</view></view>
+     <view class='item red'>27<view class='pre_text'>廿九</view></view>
+  </view>
+
+  <view class='row'>
+     <view class='item'>28<view class='pre_text'>十月</view></view>
+     <view class='item'>29<view class='pre_text'>初二</view></view>
+     <view class='item'>30<view class='pre_text'>初三</view></view>
+     <view class='item'>31<view class='pre_text'>初四</view></view>
+     <view class='item'><view class='pre_text'></view></view>
+     <view class='item red'><view class='pre_text'></view></view>
+     <view class='item red'><view class='pre_text'></view></view>
+  </view>
+</view>
+
+<view class='gm'>2018 - 2019 - G.M</view>

@@ -1,10 +1,8 @@
 // pages/test/test.js
 
 const app = getApp()
-
-console.log(app.globalData.userInfo)
 const bmap = require('../../libs/bmap-wx.js'); 
-
+import effect from '../../static/js/mini.js'
 const ak = 'EPSV8GGLf7Dhq5IGRENMaH6is5joXOBI'
 Page({
 
@@ -12,15 +10,42 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    bgcolor: 'background-color:#000'
+      
+    
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    wx.getSystemInfo({
+      success: (res) => {
+        let width = res.windowWidth
+        this.setData({
+          width,
+          scale: width / 375
+        })
+      }
+    })
     this.getWeather()
-   
+    const canvasId = 'effect'
+    const ctx = wx.createCanvasContext(canvasId)
+    ctx.moveTo(10, 10)
+    ctx.lineTo(20, 20)
+    let { width, scale } = this.data.width
+    // 768 为 CSS 中设置的 rpx 值
+    let height = 768 / 2 * scale
+    // let rain = new Rain(ctx, width, height, {
+    //   amount: 100,
+    //   speedFactor: 0.03
+    // })
+    // rain.run()
+    let rain = effect('rain', wx.createCanvasContext(canvasId), width, height, {
+      amount: 100,
+      speedFactor: 0.03
+    })
+    //  rain.run()
   },
 
   getCurrentDate(){
@@ -81,7 +106,18 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    return
+    setInterval(()=>{
+      let r = parseInt(Math.random()*255)
+      let g = parseInt(Math.random() * 255)
+      let b = parseInt(Math.random() * 255)
+      let a = Math.random().toFixed(1)
+      console.log({r,g,b,a})
+     
+      this.setData({
+        bgcolor: `background-color:rgba(${r},${g},${b},${a})`
+      })
+    },10000)
   },
 
   /**

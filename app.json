@@ -1,14 +1,13 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/xgm/xgm",
+    "pages/test/test",
     "pages/logs/logs",
     "pages/list/list",
     "pages/detail/detail",
-    "pages/xgm/xgm",
     "pages/xgmdetail/xgmdetail",
-    "pages/test/test"
-  
-    
+    "pages/cloud/cloud"
   ],
   "window": {
     "backgroundTextStyle": "light",

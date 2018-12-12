@@ -45,6 +45,13 @@
     <image src='../image/arrow.png'></image>
     </view>
   </navigator>
+
+  <navigator url='../cloud/cloud' hover-class="none">
+    <view class='index-btn' hover-class='btn-hover'>
+    <text>2019年节假日放假安排</text>
+    <image src='../image/arrow.png'></image>
+    </view>
+  </navigator>
   
   <view class='copyright'>2015-2018@酱爆小咸鱼</view>
 </view>

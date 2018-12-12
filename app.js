@@ -14,5 +14,6 @@ App({
     title_top: "24",
     title_text: "xxx", // iphone X + 24        
     prefix: 24
-  }
+  },
+  cloud: true
 })
